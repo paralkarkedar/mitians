@@ -1,0 +1,92 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.mitians'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.mitians"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat-resources:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation files('implementation \'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1\'')
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'com.google.android.material:material:1.8.0'
+
+    //implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+   annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+
+    //implementation 'com.android.support:support-compat:28.0.0'
+
+
+   //implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    //implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //Scalable size unit in neumorphism
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    //Neumorphism
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+
+    //Rounded image view
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+
+
+
+}

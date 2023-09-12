@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "937819680427",
+    "firebase_url": "https://mitian-admin-default-rtdb.firebaseio.com",
+    "project_id": "mitian-admin",
+    "storage_bucket": "mitian-admin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937819680427:android:20c134c65c14c6661351ee",
+        "android_client_info": {
+          "package_name": "com.example.mitianadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937819680427-ihbgvghhvod1drbhfhg8grvnqcjbe89s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyivrw2lzBwGow1CO8xRqQ8rFNtzlRfZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937819680427-ihbgvghhvod1drbhfhg8grvnqcjbe89s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937819680427:android:4b1a30db1d2063321351ee",
+        "android_client_info": {
+          "package_name": "com.example.mitians"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937819680427-ihbgvghhvod1drbhfhg8grvnqcjbe89s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyivrw2lzBwGow1CO8xRqQ8rFNtzlRfZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937819680427-ihbgvghhvod1drbhfhg8grvnqcjbe89s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

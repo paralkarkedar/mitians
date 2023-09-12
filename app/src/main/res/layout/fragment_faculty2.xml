@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.faculty.FacultyFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        android:elevation="3dp"
+        app:fabSize="normal"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="1000"
+                app:iss_period="1000"
+                app:iss_title_background="@drawable/gradient" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="200dp"
+                app:lottie_rawRes="@raw/faculty"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="80dp"
+                android:layout_margin="-10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mitt" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="-16dp"
+                android:gravity="center"
+                android:text="Computer Science"
+                android:textColor="@color/textColor"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/csDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/csNoData">
+                <include layout="@layout/no_data_found"/>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="80dp"
+                android:layout_margin="-10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mitt" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mechanical Engineering"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_margin="-16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechanicalDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/mechNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="80dp"
+                android:layout_margin="-10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mitt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ETC Engineering"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_margin="-16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etcDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/etcNoData">
+                <include layout="@layout/no_data_found"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="80dp"
+                android:layout_margin="-10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mitt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agriculture Engineering"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_margin="-16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/agriDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/agriNoData">
+                <include layout="@layout/no_data_found"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>
